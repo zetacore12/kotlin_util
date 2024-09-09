@@ -20,6 +20,21 @@ repositories {
 }
 
 dependencies {
+
+    implementation("org.hibernate.validator:hibernate-validator:8.0.1.Final")
+
+    implementation("jakarta.ws.rs:all:3.1.0")
+
+    implementation("jakarta.validation:jakarta.validation-api:3.0.2")
+
+    implementation("jakarta.annotation:jakarta.annotation-api:2.1.1")
+
+    testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
+
+    testImplementation("io.kotest:kotest-runner-junit5:5.8.0")
+
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
     // This dependency is used by the application.
     implementation(libs.guava)
 }
